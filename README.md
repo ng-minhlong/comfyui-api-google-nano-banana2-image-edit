@@ -1,6 +1,19 @@
 # api_google_nano_banana2_image_edit
 ComfyUI workflow Dockerized via [comfyui-wizard](https://comfy.getrunpod.io).
 Submission: https://comfy.getrunpod.io/dashboard/submissions/kd763s9jddw5hrf60v8kf84w4h89ddv5
+## Pull the prebuilt image
+
+We've already built and published this image on Docker Hub:
+
+```bash
+docker pull timpietruskyrunpod/comfyui-wizard:kd763s9jddw5hrf60v8kf84w4h89ddv5
+docker run --rm --gpus all -p 8188:8188 timpietruskyrunpod/comfyui-wizard:kd763s9jddw5hrf60v8kf84w4h89ddv5
+```
+
+Then open http://localhost:8188.
+
+---
+
 ## Build it yourself
 ```bash
 docker build -t my-comfy-workflow .
